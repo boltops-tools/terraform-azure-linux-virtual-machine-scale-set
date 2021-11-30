@@ -4,7 +4,7 @@
 
 Simple example with:
 
-* [azurerm_linux-virtual-machine-scale-set](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux-virtual-machine-scale-set)
+* [azurerm_linux_virtual_machine_scale_set](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine_scale_set)
 
 ## Add to Terrafile
 
