@@ -2,11 +2,19 @@ data "azurerm_resource_group" "this" {
   name = var.resource_group_name
 }
 
+locals {
+  custom_data = <<EOL
+#!/bin/bash
+sudo apt install apache2 -y
+  EOL
+}
+
 module "scaleset" {
   source = "../.."
 
   resource_group_name = var.resource_group_name
   subnet_id = module.vnet.vnet_subnets.default.id
+  custom_data = local.custom_data
 
   # name = "linux-scaleset"
   # instances = 1

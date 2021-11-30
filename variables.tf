@@ -41,7 +41,7 @@ variable "health_probe_id" {
 variable "custom_data" {
   description = "custom_data."
   type        = string
-  default     = null
+  default     = "# noop"
 }
 
 variable "public_key" {
